@@ -19,6 +19,8 @@ export default {
                 this.$message('搜索关键字不能为空。');
                 return
             }
+            this.$store.dispatch('showLoading')
+            console.log('qingqiu')
             this.$router.push({ path: "/search", query: { keyword: this.keyword } })
         }
     },
@@ -39,7 +41,6 @@ export default {
 }
 #searchbox {
     width: 45%;
-    max-width: 1200px;
-    padding-bottom: 10%;
+    max-width: 2200px;
 }
 </style>

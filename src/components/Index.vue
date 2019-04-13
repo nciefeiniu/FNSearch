@@ -4,7 +4,7 @@
             <LocalHeaders />
         </el-header>
         <el-main class="search-center">
-            <search-windows />
+            <search-windows style="padding-bottom: 10%;"/>
         </el-main>
         <el-footer style="height: 40px;">
             <copy-right />
